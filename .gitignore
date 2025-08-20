@@ -1,22 +1,36 @@
-# Ignore virtual environment
+# Virtual environments
 .venv/
+env/
+venv/
 
-# Ignore Python cache
+# Python cache
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Ignore datasets
-*.csv
-HiSeqV2*
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
 
-# Ignore model weights
+# Model weights
 *.pth
 *.pt
 
-# Ignore large library files
-*.dll
-*.lib
-.venv/
-*.pth
+# Datasets
 *.csv
-HiSeqV2
-__pycache__/
+*.tsv
+*.h5
+*.npz
+*.npy
+*.xls*
+*.xlsx
+HiSeqV2*
+
+# Logs
+*.log
+*.out
+
+# OS files
+.DS_Store
+Thumbs.db
+
